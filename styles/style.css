@@ -420,7 +420,7 @@ span#flag img {
 }
 
 #link {
-  cursor: url('/public/help.png'), auto;
+  cursor: url('./public/help.png'), auto;
 }
 
 .connect {
