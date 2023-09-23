@@ -96,7 +96,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("https://media.discordapp.net/attachments/1155028987974791240/1155118100438589450/background.webp?width=1085&height=610");
+  background-image: url("https://media.discordapp.net/attachments/1136684996992700436/1155126083348340776/background.webp?width=1085&height=610");
   background-repeat: no-repeat;
   z-index: -1;
   filter: blur(5px);
@@ -457,7 +457,7 @@ span#flag img {
 @media only screen and (max-device-width: 640px) {
 
   .container::before {
-    background-image: url("https://i2.100024.xyz/2023/09/23/xxrr3f.webp");
+    background-image: url("https://media.discordapp.net/attachments/1136684996992700436/1155125876242001960/mobile_background.webp?width=281&height=610");
     margin: -2px;
     filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.5);
