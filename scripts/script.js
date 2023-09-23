@@ -108,19 +108,19 @@ async function fetchDiscordStatus() {
 		let imagePath;
 		switch (discord_status) {
 			case "online":
-				imagePath = "/public/status/online.svg";
+				imagePath = "./public/status/online.svg";
 				break;
 			case "idle":
-				imagePath = "/public/status/idle.svg";
+				imagePath = "./public/status/idle.svg";
 				break;
 			case "dnd":
-				imagePath = "/public/status/dnd.svg";
+				imagePath = "./public/status/dnd.svg";
 				break;
 			case "offline":
-				imagePath = "/public/status/offline.svg";
+				imagePath = "./public/status/offline.svg";
 				break;
 			default:
-				imagePath = "/public/preload.png";
+				imagePath = "./public/preload.png";
 				break;
 		}
 
@@ -133,12 +133,12 @@ async function fetchDiscordStatus() {
 						activity.url.includes("youtube.com"))
 			)
 		) {
-			imagePath = "/public/status/streaming.svg";
+			imagePath = "./public/status/streaming.svg";
 		}
 
 		// check if "discord_status": "online" and "active_on_discord_mobile": true set src to /public/status/online-mobile.svg"
 		if (discord_status === "online" && data.active_on_discord_mobile) {
-			imagePath = "/public/status/online-mobile.svg";
+			imagePath = "./public/status/online-mobile.svg";
 		}
 
 		// if banner is null, do nothing
@@ -196,16 +196,16 @@ async function fetchDiscordStatus() {
 
 // Mapping between badge names and SVG file paths
 const badgeMappings = {
-	HOUSE_BRILLIANCE: "/public/badges/hypesquad-brilliance.svg",
-	ACTIVE_DEVELOPER: "/public/badges/active-developer.svg",
-	HOUSE_BRAVERY: "/public/badges/hypesquad-bravery.svg",
-	HOUSE_BALANCE: "/public/badges/hypesquad-balance.svg",
-	EARLY_SUPPORTER: "/public/badges/early-supporter.svg",
+	HOUSE_BRILLIANCE: "./public/badges/hypesquad-brilliance.svg",
+	ACTIVE_DEVELOPER: "./public/badges/active-developer.svg",
+	HOUSE_BRAVERY: "./public/badges/hypesquad-bravery.svg",
+	HOUSE_BALANCE: "./public/badges/hypesquad-balance.svg",
+	EARLY_SUPPORTER: "./public/badges/early-supporter.svg",
 	EARLY_VERIFIED_BOT_DEVELOPER:
-		"/public/badges/early-verified-bot-developer.svg",
-	PARTNERED_SERVER_OWNER: "public/badges/discord-partner.svg",
-	LEGACY_USER: "/public/badges/legacy-username.svg",
-	NITRO: "/public/badges/nitro.svg",
+		"./public/badges/early-verified-bot-developer.svg",
+	PARTNERED_SERVER_OWNER: "./public/badges/discord-partner.svg",
+	LEGACY_USER: "./public/badges/legacy-username.svg",
+	NITRO: "./public/badges/nitro.svg",
 };
 
 twemoji.parse(document.getElementById("flag"), {
