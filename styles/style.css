@@ -457,7 +457,7 @@ span#flag img {
 @media only screen and (max-device-width: 640px) {
 
   .container::before {
-    background-image: url("https://media.discordapp.net/attachments/1136684996992700436/1155153399436808245/mobile_background.webp?width=281&height=610");
+    background-image: url("https://media.discordapp.net/attachments/1136684996992700436/1155153871388283000/mobile_background.webp?width=281&height=610");
     margin: -2px;
     filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.5);
