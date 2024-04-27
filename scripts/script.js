@@ -144,7 +144,7 @@ async function fetchDiscordStatus() {
 		// if banner is null, do nothing
 		if (banner.id == null) {
 			bannerImage.src =
-				"https://i2.100024.xyz/2023/09/23/oz5vwn.webp";
+				"https://s1.imagehub.cc/images/2024/04/27/1ae93d2df6c17e3f1bb6664a3a9037f4.png";
 		}
 		// else set banner image
 		else {
